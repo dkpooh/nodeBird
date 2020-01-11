@@ -5131,7 +5131,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/limdk/Workspace/react-nodebird/ch1/front/.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "/Users/dokyounglim/Workspace/nodeBird/ch1/front/.next");
       return error;
     }
   };

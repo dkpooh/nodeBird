@@ -108,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! antd */ "antd");
 /* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(antd__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/limdk/Workspace/react-nodebird/ch1/front/components/AppLayout.js";
+var _jsxFileName = "/Users/dokyounglim/Workspace/nodeBird/ch1/front/components/AppLayout.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1977,7 +1977,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AppLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/AppLayout */ "./components/AppLayout.js");
 /* harmony import */ var antd_lib_input_Password__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd/lib/input/Password */ "antd/lib/input/Password");
 /* harmony import */ var antd_lib_input_Password__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(antd_lib_input_Password__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/limdk/Workspace/react-nodebird/ch1/front/pages/signup.js";
+var _jsxFileName = "/Users/dokyounglim/Workspace/nodeBird/ch1/front/pages/signup.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -2276,7 +2276,7 @@ const Signup = () => {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/limdk/Workspace/react-nodebird/ch1/front/pages/signup.js */"./pages/signup.js");
+module.exports = __webpack_require__(/*! /Users/dokyounglim/Workspace/nodeBird/ch1/front/pages/signup.js */"./pages/signup.js");
 
 
 /***/ }),
