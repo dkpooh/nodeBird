@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 import { 
   Menu, Input, Button, 
   Row, Col, Card, Avatar,
-  Form
 } from 'antd';
+import LoginForm from './LoginForm';
 
 const dummy = {
   isLogin: true,
@@ -33,9 +33,6 @@ const AppLayout = ({ children }) => {
           <Input.Search enterButton style={{ verticalAlign: 'middle ' }} />
         </Menu.Item>
       </Menu>
-      <Button>
-        <Link href="/signup"><a>회원가입</a></Link>
-      </Button>
       <Row>
         <Col xs={24} md={6}>
           {dummy.isLogin ? (
@@ -52,24 +49,7 @@ const AppLayout = ({ children }) => {
               />
             </Card>
           ) : (
-            <Form>
-              <div>
-                <div>
-                  <label htmlFor="user-id">아이디</label>
-                  <Input name="user-id" required />
-                </div>
-                <br />
-                <div>
-                  <label htmlFor="user-pass">비밀번호</label>
-                  <Input name="user-pass" type="password" required />
-                </div>
-                <br />
-                <div>
-                  <Button type="primary" htmlType="submit" loading={false}>로그인</Button>
-                  <Link href="/signup"><a><Button>회원가입</Button></a></Link>
-                </div>
-              </div>
-            </Form>
+            <LoginForm />
           )}
         </Col>
         <Col xs={24} md={12}>{children}</Col>

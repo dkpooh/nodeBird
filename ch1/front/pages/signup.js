@@ -1,23 +1,23 @@
 import React, { useState, useCallback } from 'react';
 import { Form, Input, Checkbox, Button } from 'antd'
 
+export const useInput = (initValue = null) => {
+  const [value, setter] = useState(initValue)
+  const handler = (e) => {
+    setter(e.target.value)
+  }
+  return [value, handler]
+}
+
 const Signup = () => {
   const [passwordCheck, setPasswordCheck ] = useState('');
   const [term, setTerm] = useState('');
   const [passwordError, setPasswordError] = useState(false);
   const [termError, setTermError] = useState(false);
 
-  const usetInput = (initValue = null) => {
-    const [value, setter] = useState(initValue)
-    const handler = (e) => {
-      setter(e.target.value)
-    }
-    return [value, handler]
-  }
-
-  const [id, onChangeId] = usetInput('')
-  const [nick, onChangeNick] = usetInput('')
-  const [password, onChangePass] = usetInput('')
+  const [id, onChangeId] = useInput('')
+  const [nick, onChangeNick] = useInput('')
+  const [password, onChangePass] = useInput('')
 
   const onSubmit = useCallback(e => {
     e.preventDefault();
