@@ -59,7 +59,7 @@ const AppLayout = ({ children }) => {
 }
 
 AppLayout.propTypes = {
-  children: PropTypes.elementType
+  children: PropTypes.object
 }
 
 export default AppLayout;
