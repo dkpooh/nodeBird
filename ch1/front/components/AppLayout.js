@@ -53,9 +53,6 @@ const AppLayout = ({ children }) => {
           )}
         </Col>
         <Col xs={24} md={12}>{children}</Col>
-        <Col xs={24} md={6}>
-          세번째
-        </Col>
       </Row>
     </div>
   )
