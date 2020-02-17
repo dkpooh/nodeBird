@@ -1,25 +1,26 @@
-import React from 'react';
+import React, { useEffect }  from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { LOG_IN, loginAction, logoutAction } from '../reducers/user';
 import PostForm from '../components/PostForm';
 import PostCard from '../components/PostCard';
 
-const dummy = {
-  isLoggedIn: true,
-  imagePaths: [],
-  mainPosts: [{
-    User: {
-      id: 1,
-      nickname: '제로초',
-    },
-    content: '첫 번째 게시글',
-    img: 'https://bookthumb-phinf.pstatic.net/cover/137/995/13799585.jpg?udate=20180726',
-  }],
-};
-
 const Home = () => {
+  const dispatch = useDispatch()
+  // redux state을 가져다 사용할때 useSelctor 쓸 것.
+  const { isLoggedIn, user } = useSelector(state => state.user) 
+  const { mainPosts } = useSelector(state => state.post)
+  
+  // useEffect(() => {
+  //   dispatch(loginAction)
+  //   dispatch(logoutAction)
+  //   dispatch(loginAction)
+  // }, [])
+  
   return (
     <div>
-      {dummy.isLoggedIn && <PostForm />}
-      {dummy.mainPosts.map((c) => {
+      {user ? `${user.nickname}님 로그인 하였습니다.` : '로그아웃 하였습니다.'}
+      {isLoggedIn && <PostForm />}
+      {mainPosts.map((c) => {
         return (
           <PostCard key={c} post={c} />
         );

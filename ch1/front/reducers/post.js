@@ -6,12 +6,13 @@ export const initialState = {
     },
     content: '첫 번째 게시글',
     img: 'https://bookthumb-phinf.pstatic.net/cover/137/995/13799585.jpg?udate=20180726',
-  }],
+	}],
+	imagePaths: []
 }
 
 const ADD_DUMMY = 'ADD_DUMMY'
 
-const addDummyAction = {
+export const addDummyAction = {
 	type: ADD_DUMMY,
 	mainPosts: {
 		user: {
