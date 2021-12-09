@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "antd": "^3.26.6",
-    "next": "^9.1.3",
+    "next": "^11.1.3",
     "next-redux-wrapper": "^4.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
